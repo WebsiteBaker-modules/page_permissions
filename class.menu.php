@@ -86,7 +86,7 @@ class MenuBuilder
 
      echo '<tr>
            <td align="right">'.$option['value']['page_id'].'</td>
-           <td><a href="'.WB_URL.'/pages'.$option['value']['link'].'.php" target="_blank">
+           <td><a href="'.WB_URL.PAGES_DIRECTORY.$option['value']['link'].'.php" target="_blank">
            '.$tab.$option['value']['page_title'].' ('.$option['value']['page_id'].')'.'</a> <a href="'.WB_URL.'/admin/pages/settings.php?page_id='.$option['value']['page_id'].'"><img src="'.WB_URL.'/modules/page_permission/modify.png" alt="mod" border="0" width="16" height="16" /></td>'.
            $this->group_check($option['value']['page_id']).
            '
@@ -99,7 +99,7 @@ class MenuBuilder
     else
      echo '<tr>
            <td align="right">'.$option['value']['page_id'].'</td>
-           <td><a href="'.WB_URL.'/pages'.$option['value']['link'].'.php" target="_blank">
+           <td><a href="'.WB_URL.PAGES_DIRECTORY.$option['value']['link'].'.php" target="_blank">
            '.str_repeat( "--", ( count( $parent_stack ) + 1 ) * 2 - 1 ).$option['value']['page_title'].' ('.$option['value']['page_id'].')'.'</a> <a href="'.WB_URL.'/admin/pages/settings.php?page_id='.$option['value']['page_id'].'"><img src="'.WB_URL.'/modules/page_permission/modify.png" alt="mod" border="0" width="16" height="16" /></td>'.
            $this->group_check($option['value']['page_id']).
            '

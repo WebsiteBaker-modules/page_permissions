@@ -33,6 +33,12 @@
          + for each page a direct link is added to the actual page's options in the backend
          + small corrections for proper XML tags
          + small corrections in language files
+         
+         v.0.4
+         ! fixed bug with hard coded pages directory (instantflorian)
+
+         v.0.5
+         ! fixed bug with hard coded admin directory (instantflorian)
 
  -----------------------------------------------------------------------------------------
 **/
@@ -40,7 +46,7 @@
 $module_directory = 'page_permission';
 $module_name = 'Multiple Page Permission Setting';
 $module_function = 'tool';
-$module_version = '0.0.3';
+$module_version = '0.5';
 $module_platform = '2.8.x';
 $module_author = 'Andreas Schmidt';
 $module_license = 'Free for any Website Baker CMS user.';
